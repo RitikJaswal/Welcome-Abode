@@ -1,0 +1,321 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+
+
+/* Add your custom styles here */
+.navbar-collapse {
+    flex-grow: 0;
+    /* Prevent the search bar and contact/login section from growing */
+}
+
+
+
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-left: 8rem;
+}
+
+.nav-item {
+    margin-left: 8px;
+    /* Adjust spacing between elements */
+}
+
+.nav-items {
+    padding: 10px;
+}
+
+.space {
+    margin-left: 25rem;
+}
+
+.NavBAr {
+    position: relative;
+}
+
+.search-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 55%;
+    margin-left: 22rem;
+}
+
+.search-container.show {
+    display: block;
+}
+
+.search-icon {
+    background-color: #f0f0f0;
+    /* Very light gray background */
+    border-radius: 50%;
+    /* Makes it circular */
+    padding: 10px;
+    /* Adjust as needed */
+}
+
+.search-icon:hover {
+    background-color: #e0e0e0;
+    /* Lighter gray background on hover */
+}
+
+.log {
+
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.sign {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+/* hero-css */
+.hero-about {
+    background-image: linear-gradient(rgba(93, 90, 90, 0.5), rgba(137, 137, 137, 0.5)), url(Images/hero-img.jpg);
+    background-position-x: 50%;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0px;
+    box-sizing: border-box;
+    direction: ltr;
+    height: 170px;
+    position: relative;
+    /* Added position relative */
+}
+
+.hero-head {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    font-family: Roboto, "Odoo Unicode Support Noto", sans-serif;
+    margin-top: 4rem;
+}
+
+
+
+/* section-six */
+
+
+.head-six {
+    font-size: 40px;
+    /* Reduced font size for better responsiveness */
+}
+
+.section-six {
+    padding: 50px 0;
+    /* Adjusted padding for better spacing */
+}
+
+.six-sec {
+    background-color: #cfd0d3;
+    margin-top: 2rem;
+    /* Adjusted margin for better spacing */
+    padding: 2rem 0;
+    /* Added padding for better spacing */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allowing cards to wrap on smaller screens */
+    justify-content: center;
+    /* Centering cards */
+    gap: 2rem;
+    /* Added gap between cards */
+}
+
+.cards-info {
+    width: calc(33.33% - 40px);
+    /* Adjusted card width for better layout on smaller screens */
+    background-color: white;
+    margin-top: 2rem;
+    /* Adjusted margin for better spacing */
+    margin-bottom: 2rem;
+    /* Adjusted margin for better spacing */
+    border-radius: 10px;
+}
+
+.cards-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    /* Rounded top corners for images */
+}
+
+.btn-sec-6 {
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: #1d2c50;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+
+/* seven-box */
+
+
+.second-box-7 {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allowing images to wrap on smaller screens */
+    justify-content: center;
+    /* Centering images */
+    gap: 2rem;
+    /* Added gap between images */
+}
+
+.second-box-7 img {
+    height: auto;
+    /* Allowing images to adjust their height */
+    width: 150px;
+    /* Fixed width for images */
+}
+
+
+
+
+/* crousel */
+
+.carousel-item img {
+    height: 400px;
+}
+
+
+
+
+/* Footer */
+.footer {
+    background-color: #1d2c50;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer h1 {
+    font-size: 24px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer p {
+    margin-bottom: 20px;
+}
+
+.footer .connect h1 {
+    font-size: 24px;
+}
+
+.footer .connect ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .connect ul li {
+    margin-bottom: 10px;
+}
+
+.footer .social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 2rem;
+    font-size: 30px;
+}
+
+
+
+
+/* media-queries */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        /* Align items vertically on smaller screens */
+    }
+
+    .form-inline {
+        margin-top: 10px;
+        /* Add some space between the navbar links and the search bar on smaller screens */
+    }
+
+    /* .content-four {
+        flex-direction: column;
+    } */
+
+
+}
+
+
+@media screen and (max-width: 576px) {
+    .second-box-7 img {
+        width: 100%;
+        /* Setting images to fill the width of their container on smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .head-six {
+        font-size: 30px;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .cards-info {
+        width: calc(50% - 40px);
+        /* Adjusted card width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .head-six {
+        font-size: 24px;
+        /* Adjusted font size for even smaller screens */
+    }
+
+    .cards-info {
+        width: calc(100% - 40px);
+        /* Adjusted card width for even smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-head {
+        font-size: 40px;
+        /* Adjusted font size for smaller screens */
+        margin-top: 3rem;
+        /* Adjusted margin-top for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-head {
+        font-size: 30px;
+        /* Adjusted font size for even smaller screens */
+        margin-top: 2rem;
+        /* Adjusted margin-top for even smaller screens */
+    }
+}

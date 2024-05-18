@@ -1,0 +1,403 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+
+
+/* Add your custom styles here */
+.navbar-collapse {
+    flex-grow: 0;
+    /* Prevent the search bar and contact/login section from growing */
+}
+
+
+
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-left: 8rem;
+}
+
+.nav-item {
+    margin-left: 8px;
+    /* Adjust spacing between elements */
+}
+
+.nav-items {
+    padding: 10px;
+}
+
+.space {
+    margin-left: 25rem;
+}
+
+.NavBAr {
+    position: relative;
+}
+
+.search-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 55%;
+    margin-left: 22rem;
+}
+
+.search-container.show {
+    display: block;
+}
+
+.search-icon {
+    background-color: #f0f0f0;
+    /* Very light gray background */
+    border-radius: 50%;
+    /* Makes it circular */
+    padding: 10px;
+    /* Adjust as needed */
+}
+
+.search-icon:hover {
+    background-color: #e0e0e0;
+    /* Lighter gray background on hover */
+}
+
+.log {
+
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.sign {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+/* hero-css */
+.hero-about {
+    background-image: linear-gradient(rgba(93, 90, 90, 0.5), rgba(137, 137, 137, 0.5)), url(Images/hero-img.jpg);
+    background-position-x: 50%;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0px;
+    box-sizing: border-box;
+    direction: ltr;
+    height: 170px;
+    position: relative;
+    /* Added position relative */
+}
+
+.hero-head {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    font-family: Roboto, "Odoo Unicode Support Noto", sans-serif;
+    margin-top: 4rem;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .hero-head {
+        font-size: 40px;
+        /* Adjusted font size for smaller screens */
+        margin-top: 3rem;
+        /* Adjusted margin-top for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-head {
+        font-size: 30px;
+        /* Adjusted font size for even smaller screens */
+        margin-top: 2rem;
+        /* Adjusted margin-top for even smaller screens */
+    }
+}
+
+
+
+/* section-three */
+
+.section-three {
+    background-color: #1d2c50;
+
+}
+
+.p-two {
+    margin-bottom: 5rem;
+}
+
+.p-one {
+    margin-top: 5rem;
+}
+
+/* section-four */
+
+.head-four {
+    margin-top: 10rem;
+}
+
+.content-four {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow columns to wrap on smaller screens */
+}
+
+.section-four {
+    background-color: white;
+    padding: 2rem 0;
+    /* Add padding to the section */
+}
+
+.btn-sec-4-2 {
+    border: 1px solid;
+    border-radius: 2px;
+    background-color: #1d2c50;
+    padding: 8px;
+}
+
+.btn-sec-4 {
+    border: 1px solid;
+    border-radius: 2px;
+    background-color: rgb(176, 176, 176);
+    padding: 8px 20px;
+    /* Adjust padding */
+    margin-top: 1rem;
+    /* Add margin top for button */
+}
+
+.left-four {
+    margin-top: 2rem;
+    /* Adjusted margin for better spacing */
+    padding-right: 1rem;
+    /* Add padding to the right */
+}
+
+.right-four img {
+    width: 100%;
+    /* Make image responsive */
+    max-width: 100%;
+    /* Limit maximum width of the image */
+    height: auto;
+    -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    animation: floatUpDown 3s ease-in-out infinite alternate;
+    /* Animation for floating up and down */
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-7px);
+        /* Adjust the distance to float */
+    }
+}
+
+
+
+/* video-section */
+/* General */
+.section-six {
+    margin-top: 6rem;
+}
+
+
+.circle-img {
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    padding-top: 25px;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-ceo {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-video {
+    flex-direction: row;
+}
+
+
+/* Responsive Styling */
+@media (min-width: 991.98px) {
+    .section-six {
+        margin-top: 4rem;
+        /* Adjust margin top for smaller screens */
+    }
+
+    .circle-img {
+        width: 120px;
+        height: 160px;
+    }
+
+    .head-six {
+        font-size: 40px;
+        /* Adjust heading font size for smaller screens */
+    }
+
+    .col-md-6 {
+        text-align: center;
+        /* Center content on small screens */
+    }
+
+    .col-md-6>* {
+        margin-bottom: 20px;
+        /* Add margin between items */
+    }
+
+    .row-video {
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .circle-img {
+        float: right;
+        /* Float images to the right on larger screens */
+        margin-left: 20px;
+        /* Add margin to the left of paragraphs */
+    }
+
+    .section-six {
+        margin-top: 3rem;
+    }
+
+    .image-ceo {
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* Footer */
+.footer {
+    background-color: #1d2c50;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer h1 {
+    font-size: 24px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer p {
+    margin-bottom: 20px;
+}
+
+.footer .connect h1 {
+    font-size: 24px;
+}
+
+.footer .connect ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .connect ul li {
+    margin-bottom: 10px;
+}
+
+.footer .social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 2rem;
+    font-size: 30px;
+}
+
+
+
+
+/* media-queries */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        /* Align items vertically on smaller screens */
+    }
+
+    .form-inline {
+        margin-top: 10px;
+        /* Add some space between the navbar links and the search bar on smaller screens */
+    }
+
+    /* .content-four {
+        flex-direction: column;
+    } */
+
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 767.98px) {
+
+    .left-four,
+    .right-four {
+        margin-top: 1rem;
+        /* Adjust margin for smaller screens */
+        text-align: center;
+        padding: 0;
+        /* Remove padding */
+    }
+
+    .head-four {
+        margin-top: 1rem;
+    }
+}
+
+/* Adjustments for medium and large screens */
+@media (min-width: 768px) {
+    .left-four {
+        margin-top: 0rem;
+        /* Adjust margin */
+    }
+
+    .right-four {
+        margin-top: 0;
+        /* Remove margin top for image */
+    }
+}

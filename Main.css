@@ -1,0 +1,489 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+
+.navbar-collapse {
+    flex-grow: 0;
+    /* Prevent the search bar and contact/login section from growing */
+}
+
+
+
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-left: 8rem;
+}
+
+.nav-item {
+    margin-left: 8px;
+}
+
+.nav-items {
+    padding: 10px;
+}
+
+.space {
+    margin-left: 25rem;
+}
+
+.NavBAr {
+    position: relative;
+}
+
+.search-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 55%;
+    margin-left: 22rem;
+}
+
+.search-container.show {
+    display: block;
+}
+
+.search-icon {
+    background-color: #f0f0f0;
+    /* Very light gray background */
+    border-radius: 50%;
+    /* Makes it circular */
+    padding: 10px;
+
+}
+
+.search-icon:hover {
+    background-color: #e0e0e0;
+    /* Lighter gray background on hover */
+}
+
+.log {
+
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.sign {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+/* hero-css */
+
+.hero-container {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(Images/house-isolated-field.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.hero-head {
+    margin-top: 10rem;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.btn-hero {
+    border: 1px solid white;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    color: white;
+    background-color: #1d2c50;
+    font-size: 20px;
+    margin-bottom: 8rem;
+    width: 15rem;
+}
+
+
+/* section-three */
+
+.section-three {
+    background-color: #1d2c50;
+
+}
+
+.p-two {
+    margin-bottom: 5rem;
+}
+
+.p-one {
+    margin-top: 5rem;
+}
+
+/* section-Four */
+
+.head-four {
+    margin-top: 10rem;
+}
+
+.content-four {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow columns to wrap on smaller screens */
+}
+
+.section-four {
+    background-color: white;
+    padding: 2rem 0;
+    /* Add padding to the section */
+}
+
+.btn-sec-4-2 {
+    border: 1px solid;
+    border-radius: 2px;
+    background-color: #1d2c50;
+    padding: 8px;
+}
+
+.btn-sec-4 {
+    border: 1px solid;
+    border-radius: 2px;
+    background-color: rgb(176, 176, 176);
+    padding: 8px 20px;
+    /* Adjust padding */
+    margin-top: 1rem;
+    /* Add margin top for button */
+}
+
+.left-four {
+    margin-top: 2rem;
+    /* Adjusted margin for better spacing */
+    padding-right: 1rem;
+    /* Add padding to the right */
+}
+
+.right-four img {
+    width: 100%;
+    /* Make image responsive */
+    max-width: 100%;
+    /* Limit maximum width of the image */
+    height: auto;
+    -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    animation: floatUpDown 3s ease-in-out infinite alternate;
+    /* Animation for floating up and down */
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-7px);
+        /* Adjust the distance to float */
+    }
+}
+
+
+
+/* section-six */
+
+
+.head-six {
+    font-size: 40px;
+    /* Reduced font size for better responsiveness */
+}
+
+.section-six {
+    padding: 50px 0;
+    /* Adjusted padding for better spacing */
+}
+
+.six-sec {
+    background-color: #cfd0d3;
+    margin-top: 2rem;
+    /* Adjusted margin for better spacing */
+    padding: 2rem 0;
+    /* Added padding for better spacing */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allowing cards to wrap on smaller screens */
+    justify-content: center;
+    /* Centering cards */
+    gap: 2rem;
+    /* Added gap between cards */
+}
+
+.cards-info {
+    width: calc(33.33% - 40px);
+    /* Adjusted card width for better layout on smaller screens */
+    background-color: white;
+    margin-top: 2rem;
+    /* Adjusted margin for better spacing */
+    margin-bottom: 2rem;
+    /* Adjusted margin for better spacing */
+    border-radius: 10px;
+}
+
+.cards-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    /* Rounded top corners for images */
+}
+
+.btn-sec-6 {
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: #1d2c50;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* section-seven */
+
+.head-seven {
+    font-size: 50px;
+    margin-top: 2rem;
+}
+
+.box-one-7 {
+    width: 100%;
+    /* Adjusted width */
+}
+
+.box-one-7 i {
+    margin-left: auto;
+    /* Centered horizontally */
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.flex-box-7 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.second-box-7 {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow content to wrap */
+    gap: 10rem;
+    /* Adjusted gap */
+}
+
+.second-box-7 h1 {
+    font-size: 50px;
+}
+
+.left-seven img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* crosuel */
+
+.carousel-item img {
+
+    height: 450px;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #1d2c50;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer h1 {
+    font-size: 24px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer p {
+    margin-bottom: 20px;
+}
+
+.footer .connect h1 {
+    font-size: 24px;
+}
+
+.footer .connect ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .connect ul li {
+    margin-bottom: 10px;
+}
+
+.footer .social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 2rem;
+    font-size: 30px;
+}
+
+
+
+
+/* media-queries */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        /* Align items vertically on smaller screens */
+    }
+
+    .form-inline {
+        margin-top: 10px;
+        /* Add some space between the navbar links and the search bar on smaller screens */
+    }
+
+    /* .content-four {
+        flex-direction: column;
+    } */
+
+
+
+}
+
+@media (max-width: 1000px) {
+    .left-four {
+        margin-top: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-four {
+        flex-direction: column;
+    }
+
+    .right-four img {
+        width: 550px;
+        height: 400px;
+    }
+
+    .content-four {
+        flex-direction: column;
+    }
+
+}
+
+
+/* section-four-and-five */
+
+/* Media query for responsiveness */
+@media screen and (max-width: 767.98px) {
+
+    .left-four,
+    .right-four {
+        margin-top: 1rem;
+        /* Adjust margin for smaller screens */
+        text-align: center;
+        padding: 0;
+        /* Remove padding */
+    }
+
+    .head-four {
+        margin-top: 1rem;
+    }
+}
+
+/* Adjustments for medium and large screens */
+@media (min-width: 768px) {
+    .left-four {
+        margin-top: 0rem;
+        /* Adjust margin */
+    }
+
+    .right-four {
+        margin-top: 0;
+        /* Remove margin top for image */
+    }
+}
+
+/* section-six */
+
+@media screen and (max-width: 768px) {
+    .head-six {
+        font-size: 30px;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .cards-info {
+        width: calc(50% - 40px);
+        /* Adjusted card width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .head-six {
+        font-size: 24px;
+        /* Adjusted font size for even smaller screens */
+    }
+
+    .cards-info {
+        width: calc(100% - 40px);
+        /* Adjusted card width for even smaller screens */
+    }
+}
+
+/* section-7 */
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .left-seven {
+        margin-top: 2rem;
+        /* Adjusted margin top */
+    }
+
+    .right-seven {
+        margin-top: 2rem;
+        /* Adjusted margin top */
+    }
+
+    .box-one-7 {
+        width: 100%;
+        /* Full width on small screens */
+        margin-bottom: 2rem;
+        /* Added margin bottom */
+    }
+
+    .box-one-7 i {
+        margin-left: auto;
+        /* Centered horizontally */
+    }
+
+    .second-box-7 {
+
+        /* Allow content to wrap */
+        gap: 5rem;
+        margin-left: 3rem;
+        /* Adjusted gap */
+    }
+    .left-seven img {
+       margin-top: 10rem;
+    }
+    
+}
